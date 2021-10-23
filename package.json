@@ -1,0 +1,35 @@
+{
+  "name": "aws-cognito-jwt-verifier",
+  "version": "0.1.0",
+  "description": "Node module for decoding and verifying JWT issued by AWS Cognito",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/mock-server.js",
+    "dev-test": "node test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dkrypt/aws-cognito-jwt-verifier.git"
+  },
+  "keywords": [
+    "aws",
+    "cognito",
+    "jwt",
+    "id",
+    "access"
+  ],
+  "author": "dkrypt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkrypt/aws-cognito-jwt-verifier/issues"
+  },
+  "homepage": "https://github.com/dkrypt/aws-cognito-jwt-verifier#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5"
+  },
+  "devDependencies": {
+    "axios": "^0.23.0",
+    "express": "^4.17.1"
+  }
+}
