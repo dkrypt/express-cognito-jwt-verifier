@@ -1,11 +1,11 @@
 {
-  "name": "aws-cognito-jwt-verifier",
+  "name": "express-cognito-jwt-verifier",
   "version": "0.1.0",
   "description": "Node module for decoding and verifying JWT issued by AWS Cognito",
   "main": "index.js",
   "scripts": {
-    "test": "node test/mock-server.js",
-    "dev-test": "node test/*.test.js"
+    "dev-test": "node test/mock-server.js",
+    "test": "node test/*.test.js"
   },
   "repository": {
     "type": "git",
