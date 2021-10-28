@@ -40,8 +40,6 @@ utils.downloadJwks = async (userPoolId, region, keyDir) => {
   const jwksJson = await utils.downloadFile(`https://cognito-idp.${region}.amazonaws.com/${userPoolId}/.well-known/jwks.json`);
   const accessTokenJwks = JSON.parse(jwksJson).keys[1];
   const idTokenJwks = JSON.parse(jwksJson).keys[0];
-  console.log(accessTokenJwks);
-  console.log(idTokenJwks);
   if (!fs.existsSync(keyDir)) {
     fs.mkdirSync(keyDir, { recursive: true });
   }

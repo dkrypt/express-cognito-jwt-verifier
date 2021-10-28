@@ -37,7 +37,6 @@ class AwsCognitoJwtVerifier {
     }
     const decodedToken = jsonwebtoken.decode(jwt, {complete: true});
     let jwksToUse;
-    // console.log(this);
     if (decodedToken.payload.token_use === 'access') {
       jwksToUse = this.accessJwks;
     } else if (decodedToken.payload.token_use === 'id') {
