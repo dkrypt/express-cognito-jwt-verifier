@@ -1,6 +1,6 @@
 {
   "name": "express-cognito-jwt-verifier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node module for decoding and verifying JWT issued by AWS Cognito",
   "main": "index.js",
   "scripts": {
